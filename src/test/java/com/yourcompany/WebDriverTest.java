@@ -22,6 +22,8 @@ import static org.junit.Assert.assertEquals;
 public class WebDriverTest {
 
     private WebDriver driver;
+    public SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication(System.getenv("SAUCE_USERNAME"), System.getenv("SAUCE_ACCESS_KEY"));
+
 
     @Before
     public void setUp() throws Exception {
@@ -29,8 +31,8 @@ public class WebDriverTest {
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
         capabilities.setCapability("version", "17");
         capabilities.setCapability("platform", Platform.XP);
-        this.driver = new RemoteWebDriver(
-                new URL("http://ondemand.saucelabs.com:80"),
+          this.driver = new RemoteWebDriver(
+                new URL("http://" + authentication.getUsername() + ":" + authentication.getAccessKey() + "@ondemand.saucelabs.com:80/wd/hub"),
                 capabilities);
     }
 
