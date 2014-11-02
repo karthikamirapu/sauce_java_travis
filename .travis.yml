@@ -2,3 +2,7 @@ language: java
 
 jdk:
   - openjdk7
+env:
+  global:
+    - secure: DlzqRhqjmCCne0j2za4UxwX/0Ik0wJH2DbcH3SYtc5gUT+KkEfGI/oZ8Vg75YdGRCVRAQClmob915UeptXHuizcxkZ+YhQl5DfeWflqO8iKvJQYM6ho/vrSKOr//B2cUmafwnfXmQZknIA9sHP3NM+pGJZsqlnbBTKv5KuYsFg0=
+    - secure: abtr5/+NvleR5GDUqrA+JTx+ThLXGXxlqX0vNZK1BTUjQdumWx1ldY+AwbtzGtx0uhOcbvhSFbl9UHckFKmCDlCCzWbDYnyUyPNTmyaaVfThQJDJgWCIV4oxx4s80B6AKBdgc2WAX3NtGZw+lqXr4y1Cm3il1OhA6XdjIM2/bMM=
