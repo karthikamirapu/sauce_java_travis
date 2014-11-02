@@ -30,14 +30,14 @@ public class WebDriverTest {
         capabilities.setCapability("version", "17");
         capabilities.setCapability("platform", Platform.XP);
         this.driver = new RemoteWebDriver(
-                new URL("http://SAUCE_USERNAME:SAUCE_ACCESS_KEY@ondemand.saucelabs.com:80/wd/hub"),
+                new URL("http://ondemand.saucelabs.com:80/wd/hub"),
                 capabilities);
     }
 
     @Test
     public void webDriver() throws Exception {
-        driver.get("http://www.amazon.com/");
-        assertEquals("Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more", driver.getTitle());
+        driver.get("http://www.google.com/");
+        assertEquals("Google", driver.getTitle());
     }
 
     @After
