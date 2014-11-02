@@ -38,8 +38,10 @@ public class WebDriverTest {
 
     @Test
     public void webDriver() throws Exception {
-        driver.get("http://www.google.com/");
-        assertEquals("Google", driver.getTitle());
+       // driver.get("http://www.google.com/");
+        //assertEquals("Google", driver.getTitle());
+                System.out.println("testing");
+
     }
 
     @After
