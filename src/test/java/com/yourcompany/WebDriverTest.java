@@ -22,7 +22,7 @@ import static org.junit.Assert.assertEquals;
 public class WebDriverTest {
 
     private WebDriver driver;
-    public SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication(System.getenv("SAUCE_USERNAME"), System.getenv("SAUCE_ACCESS_KEY"));
+    //public SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication(System.getenv("SAUCE_USERNAME"), System.getenv("SAUCE_ACCESS_KEY"));
 
 
     @Before
@@ -32,7 +32,7 @@ public class WebDriverTest {
         capabilities.setCapability("version", "17");
         capabilities.setCapability("platform", Platform.XP);
           this.driver = new RemoteWebDriver(
-                new URL("http://" + authentication.getUsername() + ":" + authentication.getAccessKey() + "@ondemand.saucelabs.com:80/wd/hub"),
+                new URL("http://karthikamirapu:75ff59d4-4d26-429a-bb15-f10ccb6c7383@ondemand.saucelabs.com:80/wd/hub"),
                 capabilities);
     }
 
