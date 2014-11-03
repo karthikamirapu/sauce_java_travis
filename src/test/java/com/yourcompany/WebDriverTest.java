@@ -40,7 +40,7 @@ public class WebDriverTest {
     public void webDriver() throws Exception {
         driver.get("http://www.google.com/");
         assertEquals("Google", driver.getTitle());
-        System.out.println("testing");
+        System.out.println("testing from travis");
 
     }
 
