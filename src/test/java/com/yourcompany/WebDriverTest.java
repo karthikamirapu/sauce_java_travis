@@ -29,7 +29,7 @@ public class WebDriverTest {
     public void setUp() throws Exception {
 
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-        capabilities.setCapability("version", "30");
+        capabilities.setCapability("version", "31");
         capabilities.setCapability("platform", Platform.XP);
           this.driver = new RemoteWebDriver(
                 new URL("http://karthikamirapu:75ff59d4-4d26-429a-bb15-f10ccb6c7383@ondemand.saucelabs.com:80/wd/hub"),
