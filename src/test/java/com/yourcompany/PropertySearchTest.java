@@ -2,9 +2,9 @@
 /**
  * Created by Karthik on 1/20/15.
  */
-import com.saucelabs.common.SauceOnDemandAuthentication;
+/*import com.saucelabs.common.SauceOnDemandAuthentication;
 import com.saucelabs.common.SauceOnDemandSessionIdProvider;
-import com.sun.tools.classfile.ConstantPool;
+import com.sun.tools.classfile.ConstantPool;*/
 import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Before;
